@@ -38,7 +38,7 @@ function App() {
 
     if(input && !isEditing){
 
-      setAlert({state: true, type: "confirm", content: "Item added to the list"});
+      setAlert({state: true, type: "confirm", content: `'${input}' added to the basket`});
       const newItem = { id: new Date().getTime().toString(), title: input};
       setList([...list, newItem]);
       setInput("");
@@ -58,7 +58,7 @@ function App() {
       setSelectID(null);
       setInput("");
 
-      setAlert({state: true, type: "confirm", content: "Value edited"});
+      setAlert({state: true, type: "confirm", content: `Item Changed to '${input}'`});
     }else if(!input){
       setAlert({state: true, type: "warning", content: "Please enter value"});
     }
@@ -67,14 +67,14 @@ function App() {
   }
 
   const clearList = () =>{
-    setAlert({state: true, type: "warning", content: "Full list is cleared"});
+    setAlert({state: true, type: "confirm", content: "Basket is empty"});
     setList([]);
     setCheck(!check);
   }
 
-  const deleteItem = (id) => {
-    setAlert({state: true, type: "warning", content: "Item removed"});
-    setList(list.filter((item) => item.id !== id));
+  const deleteItem = (targetID,targetTitle) => {
+    setAlert({state: true, type: "warning", content: `'${targetTitle}' removed from the basket`});
+    setList(list.filter((item) => item.id !== targetID));
     setCheck(!check);
   };
 

@@ -12,7 +12,7 @@ return(
             <button className="edit-btn" onClick={() => editItem(item.id)} >
                 <FaEdit />
             </button>
-            <button className="delete-btn" onClick={() => deleteItem(item.id)} >
+            <button className="delete-btn" onClick={() => deleteItem(item.id,item.title)} >
                <FaTrash />
             </button>
     </div>

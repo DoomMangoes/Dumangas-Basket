@@ -5,37 +5,113 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h4{
+  padding-top: 10px;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  font-size:medium;
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input{
+  height:24px;
+  background:  lightcyan;
+  border-color: transparent;
 }
 
-.card {
-  padding: 2em;
+.submit-btn{
+  height:30px;
+  background-color: lightgreen;
+  border-color: transparent;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.submit-btn:hover{
+  background-color: palegreen;
 }
+
+.clear-all-btn{
+  height:30px;
+  background-color: lightcoral;
+  border-color: transparent;
+  align-items: center;
+  margin:15px 0;
+}
+
+.clear-all-btn:hover{
+  background-color:lightpink;
+}
+
+
+.basket-box{
+  height:auto;
+  width:350px;
+  background-color:aquamarine;
+  font-weight:bold;
+  font-size: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  display:grid;
+}
+
+.list-form{
+  padding-bottom:10px;
+  margin-top: -35px;
+}
+
+
+.grocery-item{
+  height: 30px;
+  width:80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0 auto;
+}
+
+.grocery-item:hover{
+  background-color: lightcyan;
+}
+
+.edit-btn{
+  color:green;
+}
+
+.edit-btn:hover{
+  color:lightgreen;
+}
+
+.delete-btn{
+  color:red;
+}
+
+.delete-btn:hover{
+  color: lightcoral;
+}
+
+.edit-btn, .delete-btn{
+  margin-bottom: 5px;
+  background: transparent;
+  border-color: transparent;
+}
+
+.alert-box-warning{
+  margin:0 auto;
+  margin-top:5px;
+  font-size: medium;
+  background-color:lightcoral;
+  width:95%;
+}
+
+.alert-box-confirm{
+  margin:0 auto;
+  margin-top:5px;
+  font-size: medium;
+  background-color:lightgreen;
+  width:95%;
+}
+
+
+
